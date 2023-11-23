@@ -7,7 +7,7 @@
 def main():
     # introduce program to the user
     print(
-        "Hello, this program takes two positive integers and will find the lowest common multiple and display the result."
+        "Hello, this program takes two positive integers and will find the lowest common multiple and display the result.\n"
     )
 
     # get user input for two numbers
@@ -44,7 +44,7 @@ def main():
                     ):
                         # if true then tell user the lowest common multiple
                         print(
-                            "The LCM of {} and {} is {}.".format(
+                            "\nThe LCM of {} and {} is {}.".format(
                                 user_num_one_int, user_num_two_int, higher
                             )
                         )
@@ -58,15 +58,15 @@ def main():
                         higher = higher + value
 
             else:
-                print("You must input two positive integers")
+                print("\nYou must input two positive integers")
 
         # catch invalid data and tell user
         except Exception:
-            print("{} is not a positive integer".format(user_num_two_str))
+            print("\n{} is not a positive integer".format(user_num_two_str))
 
     # catch invalid data and tell user
     except Exception:
-        print("{} is not a positive integer".format(user_num_one_str))
+        print("\n{} is not a positive integer".format(user_num_one_str))
 
 
 if __name__ == "__main__":
